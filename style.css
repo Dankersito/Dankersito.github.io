@@ -3,21 +3,24 @@ body {
       background-color: #ffffff;
       color: #333;
       font-size: 16px;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     .contenedor {
-      padding: 30px 10px;
-      width: 100%;
-      max-width: 100%;
-      margin: 0;
+      padding: 60px 10px;
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
       overflow: hidden;
     }
 
     .titulo {
       color: #1c8181;
-      font-size: 24px;
+      font-size: 30px;
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 60px;
     }
 
     /* Header */
@@ -27,18 +30,19 @@ body {
       background-size: cover;
       background-attachment: fixed;
       position: relative;
+      height: 600px;
     }
 
     nav {
-      text-align: center;
-      padding: 15px 0;
+      text-align: right;
+      padding: 30px 50px 0 0;
     }
 
     nav > a {
       color: #ffffff;
       font-weight: 300;
       text-decoration: none;
-      margin: 5px;
+      margin-right: 10px;
       transition: color 0.3s;
     }
 
@@ -49,26 +53,27 @@ body {
 
     .textos-header {
       display: flex;
+      height: 710px;
+      width: 100%;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       text-align: center;
       font-family: 'Gabarito', sans-serif;
-      padding: 40px 0;
     }
 
     .textos-header h1 {
-      font-size: 32px;
+      font-size: 50px;
       color: #fff;
       transition: font-size 0.3s;
     }
 
     .textos-header h2 {
-      font-size: 18px;
+      font-size: 28px;
       font-weight: 300;
       color: #fff;
       font-family: 'Gabarito', sans-serif;
-      transition: font-size 0.3s;
+      margin-bottom: 300px;
     }
 
     .wave {
@@ -80,19 +85,22 @@ body {
     /* About us */
 
     .sobre-nosotros {
-      padding: 20px 0;
+      padding: 30px 0 60px 0;
     }
 
     .contenedor-sobre-nosotros {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
       align-items: center;
-      justify-content: center;
+      width: 90%;
+      max-width: 800px;
+      margin: auto;
     }
 
     .imagen-about-us {
       width: 100%;
-      margin: 10px 0;
+      margin-bottom: 20px;
     }
 
     .contenido-textos {
@@ -103,19 +111,22 @@ body {
 
     .portafolio {
       background: #f2f2f2;
-      padding: 20px 0;
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 20px;
     }
 
     .galeria-port {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-evenly;
     }
 
     .imagen-port {
-      width: 100%;
-      margin: 10px 0;
+      width: 48%;
+      margin-bottom: 10px;
       overflow: hidden;
+      position: relative;
       cursor: pointer;
       box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
     }
@@ -158,26 +169,26 @@ body {
     .cards {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-evenly;
     }
 
     .cards .card {
       background: linear-gradient(to right, #000000bd, #00000073);
       display: flex;
-      width: 100%;
+      width: 48%;
       max-width: 300px;
-      margin: 10px 0;
-      height: auto;
+      margin: 10px;
+      height: 200px;
       align-items: center;
-      justify-content: center;
+      justify-content: space-evenly;
       border-radius: 5px;
       box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
       transition: transform 0.3s;
     }
 
     .cards .card img {
-      width: 80px;
-      height: 80px;
+      width: 100px;
+      height: 100px;
       object-fit: cover;
       border: 3px solid #fff;
       border-radius: 50%;
@@ -185,9 +196,8 @@ body {
     }
 
     .cards .card > .contenido-texto-card {
-      width: 100%;
+      width: 60%;
       color: #fff;
-      text-align: center;
     }
 
     .cards .card > .contenido-texto-card p {
@@ -209,15 +219,15 @@ body {
     .servicio-cont {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
     }
 
     .servicio-ind {
-      width: 100%;
+      width: 48%;
       max-width: 300px;
       text-align: center;
-      margin: 10px 0;
+      margin: 10px;
     }
 
     .servicio-ind img {
@@ -237,20 +247,22 @@ body {
 
     footer {
       background: #011f00;
-      padding: 20px 0;
+      padding: 60px 0 30px 0;
+      margin: auto;
+      overflow: hidden;
     }
 
     .contenedor-footer {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+      justify-content: space-evenly;
+      margin: auto;
+      padding-bottom: 50px;
+      border-bottom: 1px solid #ccc;
     }
 
     .content-foo {
       text-align: center;
-      width: 100%;
     }
 
     .content-foo h4 {
@@ -266,42 +278,59 @@ body {
 
     .titulo-final {
       text-align: center;
-      font-size: 20px;
+      font-size: 24px;
+      margin: 20px 0 0 0;
       color: #9e9797;
     }
 
-    @media screen and (max-width: 500px) {
-      /* Ajustes para dispositivos móviles */
-      .textos-header h1 {
+    @media screen and (max-width: 768px) {
+      /* Ajustes para tabletas y dispositivos móviles */
+      .titulo {
         font-size: 24px;
       }
 
+      header {
+        height: 400px;
+      }
+
+      .textos-header h1 {
+        font-size: 35px;
+      }
+
       .textos-header h2 {
-        font-size: 16px;
+        font-size: 20px;
+      }
+
+      .contenedor-sobre-nosotros {
+        flex-direction: column;
+        align-items: center;
       }
 
       .imagen-about-us {
-        margin: 0;
+        width: 100%;
+        margin-bottom: 20px;
       }
 
       .imagen-port {
-        width: 100%;
+        width: 95%;
       }
 
       .cards .card {
-        width: 100%;
+        width: 95%;
+        max-width: 300px;
       }
 
       .cards .card img {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
       }
 
       .servicio-ind {
-        width: 100%;
+        width: 95%;
+        max-width: 300px;
       }
 
       .titulo-final {
-        font-size: 18px;
+        font-size: 20px;
       }
     }
