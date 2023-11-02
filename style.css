@@ -284,7 +284,11 @@ body {
     }
 
     @media screen and (max-width: 768px) {
-      /* Ajustes para tabletas y dispositivos móviles */
+      /* Estilos para dispositivos móviles (tabletas y teléfonos) */
+      .contenedor {
+        padding: 30px 10px;
+      }
+
       .titulo {
         font-size: 24px;
       }
@@ -299,6 +303,7 @@ body {
 
       .textos-header h2 {
         font-size: 20px;
+        margin-bottom: 100px;
       }
 
       .contenedor-sobre-nosotros {
